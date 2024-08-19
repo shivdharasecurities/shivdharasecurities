@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    text-align: left;
+    background-color: white;
+    padding: 20px 0;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5%;
+/*    border-radius: 10px;*/
+/*    max-width: 1200px;*/
+    width: 100%;
+/*    margin-top: 20px;*/
+}
+
+.content .rupee {
+    color: orangered;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.content .zero {
+    font-size: 32px;
+    color: orangered;
+    font-weight: 800;
+}
+
+.right .style {
+    width: 300px;
+    max-width: 400px;
+    margin: 60px 0 0 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.list_item {
+    display: flex;
+}
+
+.list_item ul {
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left ul li {
+    width: 350px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.left ul li span {
+    font-size: 16px;
+    color: #777;
+}
+
+form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form a {
+    width: 100%;
+    max-width: 300px;
+    text-transform: uppercase;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form a:hover {
+    background-color: #0056b3;
+    text-decoration: none !important;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+a {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header .logo img {
+        max-width: 120px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .right .style {
+        margin: 20px 0 0 330px;
+        padding: 20px;
+    }
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1, h3 {
+        font-size: 20px;
+    }
+
+    .left ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        max-width: 100px;
+    }
+
+    h1, h3 {
+        font-size: 21px;
+    }
+
+    form input, form button {
+        font-size: 11px;
+    }
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right .style {
+        margin: 20px 0 0 205px;
+        padding: 20px;
+    }
+    .main_img {
+        max-width: 250px;
+    }
+
+    .left ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header .logo img {
+        max-width: 80px;
+    }
+
+    h1, h3 {
+        font-size: 20px;
+    }
+
+    form input, form button {
+        font-size: 10px;
+        max-width: 100%;
+    }
+
+    .main_img {
+        max-width: 200px;
+    }
+    .right .style {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .left ul li {
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 20px;
+        align-content: center;
+    }
+    .list_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right .style {
+        margin-top: 20px;
+        padding: 20px;
+    }
+}
+
