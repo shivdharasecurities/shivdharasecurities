@@ -225,9 +225,9 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    body {
+    /* body {
         padding: 10px;
-    }
+    } */
 
     header .logo img {
         max-width: 80px;
@@ -254,7 +254,7 @@ a:hover {
     }
 
     .content {
-        padding: 20px;
+        padding: 0;
         align-content: center;
     }
     .list_item {
